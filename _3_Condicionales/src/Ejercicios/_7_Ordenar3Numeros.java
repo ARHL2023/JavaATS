@@ -1,0 +1,37 @@
+//Ejercicio 7: Pedir tres números y
+//        mostrarlos ordenados de mayor a  menor.
+
+package Ejercicios;
+
+import java.util.Scanner;
+
+public class _7_Ordenar3Numeros {
+    public static void main(String[] args) {
+
+        Scanner entrada = new Scanner(System.in);
+
+        int n1, n2, n3;
+
+        System.out.println("Ingrese primero numero: ");
+        n1 = entrada.nextInt();
+        System.out.println("Ingrese segundo numero: ");
+        n2 = entrada.nextInt();
+        System.out.println("Ingrese tercer numero: ");
+        n3 = entrada.nextInt();
+
+        if (n1 > n2 && n2 > n3) {
+            System.out.println(n1 + "-" + n2 + "-" + n3);
+        } else if (n1 > n3 && n3 > n2) {
+            System.out.println(n1 + "-" + n3 + "-" + n2);
+        } else if (n2 > n1 && n1 > n3) {
+            System.out.println(n2 + "-" + n1 + "-" + n3);
+        } else if (n2 > n3 && n3 > n1) {
+            System.out.println(n2 + "-" + n3 + "-" + n1);
+        } else if (n3 > n1 && n1 > n2) {
+            System.out.println(n3 + "-" + n1 + "-" + n2);
+        } else {
+            System.out.println(n3 + "-" + n2 + "-" + n1);
+        }
+
+    }
+}
