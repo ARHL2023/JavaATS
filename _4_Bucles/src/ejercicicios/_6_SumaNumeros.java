@@ -3,5 +3,21 @@
 
 package ejercicicios;
 
+import java.util.Scanner;
+
 public class _6_SumaNumeros {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        int numero, suma=0;
+
+        do {
+            System.out.print("Ingrese un numero: ");
+            numero = entrada.nextInt();
+            suma +=numero;
+        }while (numero!=0);
+
+        System.out.println("suma = " + suma);
+
+    }
 }
