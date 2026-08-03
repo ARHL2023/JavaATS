@@ -2,9 +2,7 @@
 //        suma de todos los números  introducidos.
 
 package ejercicicios;
-
 import java.util.Scanner;
-
 public class _6_SumaNumeros {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
